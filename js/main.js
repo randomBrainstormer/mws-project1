@@ -5,15 +5,6 @@ var map
 var markers = []
 
 /**
- * Activate service worker if available
- */
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('service_worker.js');
-  });
-}
-
-/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
